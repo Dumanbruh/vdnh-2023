@@ -21,7 +21,7 @@ const cover = {
         fontSize: "56px",
         fontFamily: "Mossport",
         letterSpacing: "1px",
-        color: "#31313E",
+        color: "#000000",
         lineHeight: "72px",
         textTransform: "uppercase",
       },

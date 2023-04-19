@@ -39,7 +39,7 @@ const Description = () => {
                         </Typography>
                         <Stack spacing={2}>
                             <Typography sx={style.text.body}>
-                                Новый проект Департамента спорта города Москвы делает спорт
+                                Проект Департамента спорта города Москвы делает спорт
                                 ближе и доступнее!
                             </Typography>
                             <Typography sx={style.text.body}>

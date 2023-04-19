@@ -39,10 +39,10 @@ const FooterMap = () => {
 
                                 <Typography
                                     component="a"
-                                    href="mailto:Info@fizkult.moscow.sport"
-                                    sx={style.contacts.body}
+                                    href="mailto:email.vdnh@yandex.ru"
+                                    sx={style.contacts.email}
                                 >
-                                    Info@fizkult.moscow.sport
+                                    email.vdnh@yandex.ru
                                 </Typography>
                             </Box>
 

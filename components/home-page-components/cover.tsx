@@ -11,39 +11,39 @@ const Cover = () => {
 
     const sports = [
         {
-            label: "Фрисби",
-            link: "/section/frisbee",
+            label: "Шахматы",
+            link: "/",
+        },
+        {
+            label: "Кинопоказ",
+            link: "/",
         },
         {
             label: "Футбол",
-            link: "/tournament/football",
+            link: "/",
         },
         {
             label: "Волейбол",
-            link: "/tournament/volleyball",
-        },
-        {
-            label: "Ролики",
-            link: "/section/skates",
+            link: "/",
         },
 
         {
-            label: "ГОРОДОШНЫЙ СПОРТ",
-            link: "/section/gorodki",
+            label: "Баскетбол 3x3",
+            link: "/",
         },
 
         {
-            label: "Шахматы",
-            link: "/section/chess",
+            label: "Спортивные выходные",
+            link: "/",
         },
         {
-            label: "Лекции",
-            link: "/lectures/lection",
+            label: "Забег",
+            link: "/",
         },
-        {
-            label: "Кинопоказы",
-            link: "/lectures/movie",
-        },
+        // {
+        //     label: "Кинопоказы",
+        //     link: "/lectures/movie",
+        // },
     ];
 
     if (!matches) {

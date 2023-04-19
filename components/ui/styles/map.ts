@@ -37,6 +37,13 @@ const map = {
         fontSize: "18px",
         color: "#262626",
       },
+      email: {
+        fontFamily: "Gotham Pro Light",
+        fontSize: "18px",
+        color: "#262626",
+        textDecorationLine: "underline",
+        textUnderlineOffset: "2px",
+      }
     },
   },
 
@@ -77,6 +84,13 @@ const map = {
         fontSize: "18px",
         color: "#262626",
       },
+      email: {
+        fontFamily: "Gotham Pro Light",
+        fontSize: "18px",
+        color: "#262626",
+        textDecorationLine: "underline",
+        textUnderlineOffset: "2px",
+      }
     },
   },
 };
