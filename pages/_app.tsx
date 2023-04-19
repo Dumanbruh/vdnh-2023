@@ -4,6 +4,7 @@ import { SessionProvider } from "next-auth/react";
 import { CssBaseline, Box, ThemeProvider } from "@mui/material";
 import theme from '../styles/theme';
 import FooterMap from '@components/ui/footer-map';
+import Navbar from '@components/ui/navbar';
 
 export default function App({ Component, pageProps: { session, user, ...pageProps } }: AppProps) {
   return (
@@ -17,6 +18,8 @@ export default function App({ Component, pageProps: { session, user, ...pageProp
         }}
       >
         <SessionProvider session={session}>
+          <Navbar />
+
           <Component {...pageProps} />
           <FooterMap />
         </SessionProvider>
