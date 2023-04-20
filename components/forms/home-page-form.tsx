@@ -16,6 +16,7 @@ import { useFormik } from "formik";
 
 import Snackbar from "@mui/material/Snackbar";
 import axios from "axios";
+import * as Yup from "yup";
 
 const RegistrationForm = () => {
   let style;
@@ -27,11 +28,14 @@ const RegistrationForm = () => {
       email: "",
       name: "",
     },
+    validationSchema: Yup.object().shape({
+      email: Yup.string().email('Неправильная почта').required('Поле должно быть заполнено'),
+      name: Yup.string().required('Поле должно быть заполнено'),
+    }),
     onSubmit: (values, { resetForm }) => {
       axios.post("/api/form", values).then((res) => {
         handleClick();
       });
-      resetForm()
     },
   });
 
@@ -92,6 +96,9 @@ const RegistrationForm = () => {
                         {...formik.getFieldProps("email")}
                         variant="outlined"
                         sx={{ minHeight: "64px" }}
+                        error={formik.touched.email && Boolean(formik.errors.email)}
+                        helperText={formik.touched.email && formik.errors.email}
+                        disabled={formik.isSubmitting}
                       />
                     </FormControl>
 
@@ -101,6 +108,9 @@ const RegistrationForm = () => {
                         {...formik.getFieldProps("name")}
                         variant="outlined"
                         sx={{ minHeight: "64px" }}
+                        error={formik.touched.name && Boolean(formik.errors.name)}
+                        helperText={formik.touched.name && formik.errors.name}
+                        disabled={formik.isSubmitting}
                       />
                     </FormControl>
                   </Stack>
@@ -111,7 +121,7 @@ const RegistrationForm = () => {
                       sx={style.button}
                       type="submit"
                     >
-                      <Typography sx={style.button.text}>отправить</Typography>
+                      <Typography sx={style.button.text}>{formik.isSubmitting ? "Отправлено!" : "отправить"}</Typography>
                     </Button>
                   ) : (
                     <Button
@@ -120,7 +130,7 @@ const RegistrationForm = () => {
                       sx={style.button}
                       type="submit"
                     >
-                      <Typography sx={style.button.text}>отправить</Typography>
+                      <Typography sx={style.button.text}>{formik.isSubmitting ? "Отправлено!" : "отправить"}</Typography>
                     </Button>
                   )}
                 </Stack>
