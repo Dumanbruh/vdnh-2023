@@ -86,7 +86,7 @@ const FooterMap = () => {
                     <Stack py={1} direction={matches ? "row" : "column"}>
                         <Stack alignItems="center" direction="row" spacing={1}>
                             <Box
-                                sx={{ mt: 1 }}
+                                sx={{ mt: 1, width: matches ? "100%" : "25%" }}
                                 component="a"
                                 target="_blank"
                                 href="https://www.mos.ru/moskomsport/"
@@ -95,27 +95,42 @@ const FooterMap = () => {
                                     sx={
                                         matches
                                             ? { height: 50, margin: 1 }
-                                            : { height: 35, margin: 1 }
+                                            : { height: 35, width: "100%" }
                                     }
                                     component="img"
                                     src="/images/dsgm.svg"
                                 />
                             </Box>
 
-                            <Box component="a" target="_blank" href=" https://moscow.sport/">
+                            <Box component="a" sx={{ mt: 1, width: matches ? "100%" : "25%" }}
+                                target="_blank" href="https://moscow.sport/">
                                 <Box
                                     sx={
                                         matches
                                             ? { height: 50, margin: 1 }
-                                            : { height: 35, margin: 1 }
+                                            : { height: 35, width: "100%" }
                                     }
                                     component="img"
                                     src="/images/mossport.svg"
                                 />
                             </Box>
 
+                            <Box component="a" sx={{ mt: 1, width: matches ? "100%" : "25%" }}
+                                target="_blank" href="https://100.moscow.sport">
+                                <Box
+                                    sx={
+                                        matches
+                                            ? { height: 50, margin: 1 }
+                                            : { height: 35, width: "100%" }
+                                    }
+                                    component="img"
+                                    src="/images/100years.svg"
+                                />
+                            </Box>
+
+
                             <Box
-                                sx={{ mt: 1 }}
+                                sx={{ mt: 1, width: matches ? "100%" : "25%" }}
                                 component="a"
                                 target="_blank"
                                 href="https://vdnh.ru/"
@@ -124,7 +139,7 @@ const FooterMap = () => {
                                     sx={
                                         matches
                                             ? { height: 50, margin: 1 }
-                                            : { height: 35, margin: 1 }
+                                            : { height: 35, width: "100%" }
                                     }
                                     component="img"
                                     src="/images/vdnh.svg"

@@ -27,10 +27,11 @@ const RegistrationForm = () => {
       email: "",
       name: "",
     },
-    onSubmit: (values) => {
+    onSubmit: (values, { resetForm }) => {
       axios.post("/api/form", values).then((res) => {
         handleClick();
       });
+      resetForm()
     },
   });
 

@@ -345,6 +345,19 @@ const Navbar = () => {
                                             sx={{ mt: 1 }}
                                             component="a"
                                             target="_blank"
+                                            href="https://100.moscow.sport"
+                                        >
+                                            <Box
+                                                sx={{ height: 50, margin: 1 }}
+                                                component="img"
+                                                src="/images/100years.svg"
+                                            />
+                                        </Box>
+
+                                        <Box
+                                            sx={{ mt: 1 }}
+                                            component="a"
+                                            target="_blank"
                                             href="https://vdnh.ru/"
                                         >
                                             <Box
